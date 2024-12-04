@@ -1,0 +1,50 @@
+@import "vars";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $white-color;
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $white-color;
+  transition: color 0.3s ease;
+}
+
+input,
+button,
+textarea {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  color: $white-color;
+  padding: $spacing-small $spacing-medium;
+  border-radius: $border-radius;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.visible-hidden {
+  display: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
